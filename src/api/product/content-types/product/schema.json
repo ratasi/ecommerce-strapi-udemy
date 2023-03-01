@@ -36,11 +36,11 @@
     "description": {
       "type": "richtext"
     },
-    "category_products": {
+    "category_product": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::category-product.category-product",
-      "mappedBy": "product"
+      "inversedBy": "products"
     }
   }
 }
