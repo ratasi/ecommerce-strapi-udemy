@@ -41,6 +41,12 @@
       "relation": "manyToOne",
       "target": "api::category-product.category-product",
       "inversedBy": "products"
+    },
+    "position": {
+      "type": "integer",
+      "max": 8,
+      "min": 1,
+      "unique": true
     }
   }
 }
